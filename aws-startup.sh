@@ -52,5 +52,5 @@ AWS_HOST+=$(aws ec2 describe-instances --instance-id $1 | jq -r '.Reservations[0
 
 echo "Start initials jobs..."
 
-INIT_SCRIPT="sudo systemctl start cm-auth-service; sleep 30; sudo systemctl start cm-project-manager; sudo systemctl start cm-job-runner"
+INIT_SCRIPT="INPUT YOUR SCRIPT"
 ssh -i $2 $AWS_HOST $INIT_SCRIPT
